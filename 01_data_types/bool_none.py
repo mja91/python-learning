@@ -95,7 +95,7 @@ print(isinstance(x, int))          # True
 print(isinstance(x, (int, float))) # True  (여러 타입 동시 확인)
 print(isinstance(x, str))          # False
 
-# ── 비교 연산자 심화 ──────────────────────────────────────────────────────
+# ── 비교 연산자 ──────────────────────────────────────────────────────
 # == : 값 비교  (Java .equals())
 # is : 동일 객체 비교  (Java ==)
 
@@ -115,3 +115,9 @@ if val == None:     # X 비권장 (동작은 하지만)
     pass
 
 # is는 None 비교 시에만 주로 활용, 이외 값 비교는 "==" 활용
+
+# ── 삼항 연산자 ──────────────────────────────────────────────────────
+# Python: 참값 if 조건 else 거짓값
+score = 85
+result = "합격" if score >= 60 else "불합격"
+print(result)  # 합격
